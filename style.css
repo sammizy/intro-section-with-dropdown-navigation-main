@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Gray50: hsl(0, 0%, 98%);
+  --Gray500: hsl(0, 0%, 41%);
+  --Gray950: hsl(0, 0%, 8%);
+}
+body {
+  font-size: 18px;
+  background-color: var(--Gray50);
+  padding: 1.5rem;
+  color: var(--Gray500);
+  font-family: "Epilogue", sans-serif;
+}
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+.logo nav ul li img {
+  margin-left: 0.5rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: none;
+}
+header nav {
+  align-items: center;
+}
+header nav ul li {
+  display: inline-flex;
+  list-style: none;
+  margin: 0 0 0 2.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+header nav ul li:active {
+  color: var(--Gray950);
+}
+header nav ul li img:active {
+  fill: var(--Gray950);
+}
+header nav ul li a {
+  text-decoration: none;
+  color: var(--Gray500);
+}
+header nav ul li a:active {
+  color: var(--Gray950);
+}
+.login {
+  display: none;
+}
+.registration-01 {
+  display: none;
+}
+.dropdown-01 {
+  display: none;
+}
+.dropdown-02 {
+  display: none;
+}
+.registration-02 {
+  display: none;
+}
+.registration {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  align-items: center;
+}
+.registration a {
+  text-decoration: none;
+  color: var(--Gray500);
+}
+.registration p a:active {
+  color: var(--Gray950);
+}
+.registration button:active {
+  color: var(--Gray950);
+  border-color: var(--Gray950);
+  border: 2px solid;
+}
+.registration button {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background-color: var(--Gray50);
+  border: 2px solid;
+  border-color: var(--Gray500);
+  font-family: "Epilogue", sans-serif;
+  color: var(--Gray500);
+  cursor: pointer;
+}
+.dropdown {
+  display: flex;
+}
+.dropdown-1 {
+  background-color: var(--Gray50);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1.5rem;
+  display: flex;
+  margin-left: 5.2%;
+  visibility: hidden;
+}
+.dropdown-1 ul li {
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+.dropdown-1 ul li img {
+  margin-right: 1rem;
+}
+.dropdown-2 {
+  background-color: var(--Gray50);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1.5rem;
+  margin-left: 3.5%;
+  height: 50%;
+  visibility: hidden;
+}
+.dropdown-2 ul li {
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7rem;
+}
+.hero h1 {
+  color: var(--Gray950);
+  font-size: 5rem;
+  width: 85%;
+  font-weight: 700;
+}
+.hero p {
+  width: 70%;
+  line-height: 1.5rem;
+  margin-top: 2.8rem;
+  font-weight: 500;
+}
+.hero a button {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  background-color: var(--Gray950);
+  border: none;
+}
+.hero a button:active {
+  background-color: var(--Gray50);
+  border: 1px solid;
+  border-color: var(--Gray950);
+}
+.hero a button {
+  text-decoration: none;
+  font-family: "Epilogue", sans-serif;
+  color: var(--Gray50);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.hero a button:active {
+  color: var(--Gray950);
+}
+section picture img {
+  width: 90%;
+  height: auto;
+  margin-top: -25%;
+}
+.sponsors {
+  margin-top: 9rem;
+  display: flex;
+  gap: 3.5rem;
+}
+@media (max-width: 400px) {
+  .menu {
+    display: block;
+    position: relative;
+  }
+  body {
+    padding: 0 0;
+    position: relative;
+  }
+  .logo-img {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+  .menu {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+  }
+  header {
+    margin: 0 0rem;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.5));
+  }
+  header nav ul {
+    background-color: var(--Gray50);
+    height: 100%;
+    margin-left: 35%;
+    padding-top: 25%;
+  }
+  header nav ul li {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+  .login {
+    text-align: center;
+    display: block;
+    margin-left: -2rem;
+  }
+  .registration-01 {
+    display: block;
+  }
+  .registration-01 button {
+    margin-top: -1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background-color: var(--Gray50);
+    border: 2px solid;
+    border-color: var(--Gray500);
+    font-family: "Epilogue", sans-serif;
+    color: var(--Gray500);
+    cursor: pointer;
+    margin-left: -1rem;
+    text-align: center;
+  }
+  .registration-01 button:active {
+  color: var(--Gray950);
+  border-color: var(--Gray950);
+  border: 2px solid;
+}
+  .dropdown-01 {
+    margin-left: -6rem;
+    align-items: center;
+    margin-top: -5rem;
+    display: none;
+  }
+  .dropdown-02 {
+    margin-left: -5rem;
+    align-items: center;
+    margin-top: -5rem;
+    display: none;
+  }
+  .dropdown-01 ul li img {
+    margin-right: 1rem;
+  }
+  .registration {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 65%;
+    margin-left: 35%;
+    margin-top: 50rem;
+  }
+  .registration button {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  section {
+    flex-direction: column-reverse;
+    margin-left: 0;
+  }
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .hero p {
+    width: 100%;
+    font-size: 17px;
+  }
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-top: 4rem;
+  }
+  .partners img {
+    height: auto;
+    width: 85%;
+  }
+  .dropdown {
+    display: none;
+    position: relative;
+  }
+  section picture img {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+}
